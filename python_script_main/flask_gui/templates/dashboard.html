@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<center>
+
+<h1>VENOM : DEDICATED PERSONAL ASSISTANT</h1>
+<a href=today ><button class=grey style="height:75px;width:150px">TODAY'S STATS</button></a>
+
+</center>
+
+<h3><p> History </p></h3>
+<ol>
+{% for day in history %}
+	<li><a href="history/{{day}}"><p> {{day}} </p></a></li>
+{% endfor %}
+</ol>
+
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+
+<style>
+div.a {
+  text-align: center;
+}
+
+div.b {
+  text-align: left;
+}
+</style>
+
+<script>
+  n =  new Date();
+  y = n.getFullYear();
+  m = n.getMonth() + 1;
+  d = n.getDate();
+  document.getElementById("date").innerHTML = m + "/" + d + "/" + y;
+</script>
+
+<body>
+<div class="a">
+
+<h1> Hello USER! </h1>
+<h1><p id="date"></p></h1>
+<div class="b">
+
+<p> Minutes you spent on Eating	: {{eat}}   </p>
+<p> Minutes you spent Out: {{none_}} </p>
+<p> Minutes you spent on Praying: {{pray}}  </p>
+<p> Minutes you spent on Sleeping: {{sleep}} </p>
+<p> Minutes you spent on Studying: {{study}} </p>
+</div>
+<img src="/static/hope.png" >
+
+</div>
+</body>
+
+</html>
+
